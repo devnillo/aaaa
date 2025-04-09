@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@import "../../globals.css";
+input{
+    @apply min-w-full p-2 border border-gray-300 rounded;
+}
