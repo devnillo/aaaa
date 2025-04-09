@@ -22,7 +22,8 @@ export default function Login() {
                 logo
             </div>
             <form className="mt-4 space-y-4 w-full md:w-2/4" method="POST" onSubmit={(e) => {
-                fetchData()
+                e.preventDefault();
+                alert('entrou')
             }
             }>
                 <h1 className="text-2xl p-2 font-bold text-white bg-primary w-full text-center rounded">Area do Aluno</h1>
