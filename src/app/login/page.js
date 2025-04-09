@@ -23,13 +23,12 @@ export default function Login() {
             </div>
             <form className="mt-4 space-y-4 w-full md:w-2/4" method="POST" onSubmit={(e) => {
                 e.preventDefault();
-                alert('entrou')
             }
             }>
                 <h1 className="text-2xl p-2 font-bold text-white bg-primary w-full text-center rounded">Area do Aluno</h1>
                 <Input name={'code'} placeholder={'Código do Aluno'} required={true} type={'text'}/>
                 <Input name={'bithdate'} placeholder={'Data de Nascimento'} required={true} type={'date'}/>
-                <button
+                <button onClick={fetchData}
                     type="submit"
                     className="w-full p-3 text-white bg-primary rounded cursor-pointer"
                 >
