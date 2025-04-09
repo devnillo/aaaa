@@ -22,7 +22,6 @@ export default function Login() {
                 logo
             </div>
             <form className="mt-4 space-y-4 w-full md:w-2/4" method="POST" onSubmit={(e) => {
-                e.preventDefault();
                 fetchData()
             }
             }>
